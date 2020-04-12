@@ -1,0 +1,368 @@
+
+*{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+.float_left{
+    float: left;
+}
+
+.align_middle{
+    vertical-align: middle;
+}
+
+.bp_right_tri{
+    background: url('/data/image/blt_wif.png') no-repeat left center;
+    padding-left: 15;
+}
+
+.text_center{
+    text-align: center;
+}
+
+.text_bold{
+    font-weight: bold;
+}
+
+.text_underline{
+    text-decoration: underline;
+}
+
+.text_font_11{
+    font-size: 11px;
+}
+
+.text_font_12{
+    font-size: 12px;
+}
+
+.color_red{
+    color: #ed1746;
+}
+
+.color_blue{
+    color: blue;
+}
+
+.color_gray01{
+    color: #666666;
+}
+
+.bgColor_gray{
+    background-color: #f4f4f4;
+}
+
+.anchor_button{
+    text-align: center;
+    align: center;
+    border: 1px solid #a3a4a8;
+    border-radius: 2px;
+    padding: 2px 5px 2px 5px;
+    background-color: #f7f7f7;
+    font-size: 14px;
+}
+
+.errorMsg{
+    font-size: 12px;
+    color: red;
+}
+
+#wrap_paging .page:hover,
+#wrap_forum a:hover,
+#wrap_userInfo a:hover{
+    text-decoration: underline;
+    text-decoration-color:black;
+}
+
+#wrap_all{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#wrap_main_title{
+    text-align: center;
+    border-bottom: solid 3px black;
+    height: 120px;
+    margin: 50px 0 0 0;
+}
+
+#wrap_forumPage,
+#wrap_topicPage,
+#wrap_signUp,
+#wrap_editUserInfo,
+#wrap_writeTopic{
+    margin: 20px 0 0 20px;
+    width: 750px;
+    float:left;
+}
+
+#wrap_forumPage .wrap_listHead table{
+    background-color: #bde5e5;
+    border-top: solid 1px #8bd2d2;
+    border-bottom: solid 1px #eaeaea;
+    text-align: center;
+    font-size:14px;
+}
+
+#wrap_forum, #wrap_userInfo{
+    width: 120px;
+    margin: 20px 0 0 0px;
+    border-top: solid 1px #d7d7d7;
+    border-left: solid 1px #d7d7d7;
+    border-right: solid 1px #d7d7d7;
+}
+
+#wrap_forum dl, #wrap_userInfo dl, #wrap_userInfo ul{
+    border-bottom: solid 1px #d7d7d7;
+    padding: 10px 9px 10px 9px;
+    font-size: 14px;
+}
+
+#wrap_userInfo ul{
+    list-style: square inside;
+}
+
+#wrap_topicList td{
+    font-size: 12px;
+    border-bottom: solid 1px #eaeaea;
+    overflow-wrap: break-word;
+}
+
+#wrap_paging{
+    clear:both;
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+
+#wrap_paging .page{
+    display: inline-block;
+    border: 1px solid #e2e2e5;
+    width: 30px;
+    font-weight: bold;
+    border-radius: 2px;
+    color: #999;
+    font-size:12px;
+    padding: 6px 0 6px 0;
+    margin: 0 4px 0 0;
+}
+
+#wrap_paging .current_page{
+    text-decoration: underline;
+    color: #ED1746;
+}
+
+#wrap_topicTitle{
+    padding: 9px 5px 0 5px;
+}
+
+.topicInfo{
+    border-bottom: 1px dashed #5a5a5a;
+}
+
+#wrap_topicContent{
+    padding: 0 10px 0 10px;
+    margin-bottom: 60px;
+    white-space: pre-line;
+    line-height: 150%;
+    font-size: 17px;
+}
+
+#wrap_commentAll{
+    margin: 10px 0;
+    border: solid 5px #e3e3e3;
+}
+
+#wrap_commentTitle{
+    padding-left: 5px;
+    height: 26px;
+}
+
+#wrap_commentList{
+    margin: 0 5px 0 5px;
+    padding: 0 5px 0 5px;
+}
+
+#wrap_commentInput{
+    margin: 10px 15px 10px 15px;
+}
+
+#commentMsg{
+    padding: 10px 15px 10px 15px;
+    border: solid 7px #e3e3e3;
+    font-size: 12px;
+}
+
+#wrap_commentAll .commentInput{
+    margin-top: 10px;
+    background-color: #f8fafa;
+}
+
+#wrap_commentAll .comment_bottom{
+    font-size: 13px;
+    border-bottom: solid 1px #e3e3e3;
+}
+
+#wrap_commentAll .topicRecomment{
+    background-color: #fcead7;
+}
+
+#wrap_login{
+    width: 360px;
+    margin: 100px auto;
+    padding: 0 0 50px 0;
+}
+
+#wrap_login #loginBox{
+    border: 1px solid #ed1746;
+}
+
+#wrap_signUp,
+#wrap_editUserInfo{
+    border: 1px solid #d7d7d7;
+    padding: 15px 15px 0 15px;
+}
+
+#wrap_signUp .leftSide,
+#wrap_editUserInfo .leftSide{
+    background-color: #e8e2d4;
+    text-align: right;
+    padding-right: 10px;
+    width: 260px;
+}
+
+#wrap_signUp .rightSide,
+#wrap_editUserInfo .rightSide{
+    background-color: #f6f6f6;
+    padding-left: 10px;
+}
+
+#wrap_signUp td, #
+wrap_editUserInfo td{
+    height: 50px;
+}
+
+#wrap_editUserInfo .rightSide{
+    padding: 10px 0 10px 5px;
+}
+
+#wrap_editUserInfo textarea{
+    resize: none;
+}
+
+#wrap_successPage .centerBtn,
+#wrap_signUp .signUpPageBtn,
+#wrap_editUserInfo .editUserInfoBtn,
+#wrap_writeTopic .writeTopicBtn{
+    margin: 20px auto;
+    text-align: center;
+    width: 100%;
+}
+
+#topicBtnList img{
+    width: 45px;
+    height: 20px;
+}
+
+#wrap_nearTopicInfo td{
+    font-size: 11px;
+    height: 30px;
+}
+
+#wrap_topicSearch{
+    width: 100%;
+    margin-top: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+#wrap_topicSearch .writeTopicBtn{
+    margin-right: 20px;
+    display: inline-block;
+}
+
+#wrap_topicSearch .searchForm{
+    display: inline-block;
+    width: 400px;
+}
+
+#wrap_topicSearch .searchForm select,
+#wrap_topicSearch .searchForm input{
+    vertical-align: middle;
+    height: 20px;
+}
+
+#wrap_writeTopic .t_left{
+    width: 150px;
+    background-color: #f4f4f4;
+    border-left: solid #d7d7d7 1px;
+}
+
+#wrap_writeTopic td{
+    border-top: solid #d7d7d7 1px;
+    border-right: solid #d7d7d7 1px;
+}
+
+#wrap_writeTopic .content{
+    border-left: solid #d7d7d7 1px;
+    border-bottom: solid #d7d7d7 1px;
+    padding: 10px;
+}
+
+#wrap_writeTopic .content textarea{
+    resize: none;
+    width: 99%;
+    height: 700px;
+    line-height: 150%;
+    font-size: 17px;
+}
+
+#wrap_writeTopic .title{
+    margin: 2px 0 2px 2px;
+    width: 350px;
+}
+
+#wrap_mainContent{
+    width: 750px;
+    float:left;
+    margin-left: 10px;
+}
+
+#wrap_mainContent .recentTopicList{
+    width: 47%;
+    float: left;
+    border: solid 1px #d7d7d7;
+    margin: 20px 10px 0px 10px;
+}
+
+#wrap_mainContent .rt_title{
+    background-color: #d7d7d7;
+}
+
+#wrap_mainContent td{
+    height: 30px;
+    padding-left: 5px;
+    overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+#wrap_successPage{
+    margin: 20px 0 0 20px;
+    width: 750px;
+    float:left;
+    border: 1px solid #bde5e5;
+    height: 134px;
+    padding: 70px 0 0 0;
+    background-color: #e8e2d4;
+}

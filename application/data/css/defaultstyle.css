@@ -1,0 +1,219 @@
+
+*{
+    margin: 0 0 0 0;
+    pagging: 0 0 0 0;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+a:hover{
+    text-decoration:underline;
+    text-decoration-color:black;
+}
+
+.div_left{
+    float: left;
+}
+
+.bp_right_tri{
+    background: url('/data/image/blt_wif.png') no-repeat left center;
+    padding-left: 15;
+}
+
+.text_center{
+    text-align: center;
+}
+
+.text_bold{
+    font-weight: bold;
+}
+
+.text_underline{
+    text-decoration: underline;
+}
+
+.text_font_12{
+    font-size: 12px;
+}
+
+.color_red{
+    color: red;
+}
+
+.color_blue{
+    color: blue;
+}
+
+.bgColor_gray{
+    background-color: #f4f4f4;
+}
+
+.anchor_button{
+    align: center;
+    border: 1px solid #a3a4a8;
+    border-radius: 2px;
+}
+
+.anchor_button:hover{
+    text-decoration: none;
+}
+
+#wrap_all{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#wrap_main_title{
+    text-align: center;
+    border-bottom: solid 3px black;
+    height: 120px;
+    margin: 50px 0 0 0;
+}
+
+#wrap_forumPage, #wrap_topicPage, #wrap_signUp{
+    margin: 20px 0 0 20px;
+    width: 750px;
+    float:left;
+}
+
+#wrap_forumPage .wrap_listHead table{
+    background-color: #bde5e5;
+    border-top: solid 1px #8bd2d2;
+    border-bottom: solid 1px #eaeaea;
+    text-align: center;
+    font-size:14px;
+}
+
+#wrap_forum, #wrap_userInfo{
+    width: 120px;
+    margin: 20px 0 0 0px;
+    border-top: solid 1px #d7d7d7;
+    border-left: solid 1px #d7d7d7;
+    border-right: solid 1px #d7d7d7;
+}
+
+#wrap_forum dl, #wrap_userInfo dl, #wrap_userInfo ul{
+    border-bottom: solid 1px #d7d7d7;
+    padding: 10px 9px 10px 9px;
+}
+
+#loginButton{
+    border: 1px solid #bbbbbb;
+    border-radius: 2px;
+    text-align: center;
+    margin: 0 0 5px 0;
+    width: 100%;
+}
+
+#wrap_topicList td{
+    font-size: 12px;
+    border-bottom: solid 1px #eaeaea;
+}
+
+#wrap_paging{
+    clear:both;
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+
+#wrap_paging .page{
+    display: inline-block;
+    border: 1px solid #e2e2e5;
+    width: 30px;
+    font-weight: bold;
+    border-radius: 2px;
+    color: #999;
+    font-size:12px;
+    padding: 6px 0 6px 0;
+}
+
+#wrap_paging .page:hover{
+    text-decoration: underline;
+}
+
+#wrap_paging .current_page{
+    text-decoration: underline;
+    color: #ED1746;
+}
+
+#wrap_topicTitle{
+    padding: 9px 5px 0 5px;
+}
+
+#wrap_topicTitle td{
+    border-bottom: 1px dashed #5a5a5a;
+}
+
+#wrap_topicContent{
+    padding: 0 10px 0 10px;
+    white-space: pre-line;
+}
+
+#wrap_commentList{
+    margin: 60px 0;
+    border: solid 5px #e3e3e3;
+}
+
+#wrap_commentList .underline_gray{
+    border-bottom: solid 1px #e3e3e3;
+}
+
+$wrap_commentList #wrap_commentInput{
+    margin: 10px 15px 10px 15px;
+}
+
+#wrap_commentList #commentMsg{
+    padding: 10px 15px 10px 15px;
+    border: solid 7px #e3e3e3;
+    font-size: 12px;
+}
+
+#wrap_commentList #commentForm{
+    margin-top: 10px;
+    background-color: #f8fafa;
+    table-layout: auto;
+}
+
+#wrap_login{
+    width: 360px;
+    margin: 100px auto;
+    padding: 0 0 50px 0;
+}
+
+#wrap_login #loginBox{
+    border: 1px solid #ed1746;
+}
+
+#wrap_signUp{
+    border: 1px solid #d7d7d7;
+    padding: 15px 15px 0 15px;
+}
+
+#wrap_signUp .leftSide{
+    background-color: #e8e2d4;
+    text-align: right;
+    padding-right: 10px;
+    width: 260px;
+}
+
+#wrap_signUp .rightSide{
+    background-color: #f6f6f6;
+    padding-left: 10px;
+}
+
+#wrap_signUp td{
+    height: 50px;
+}
+
+#wrap_signUp #signUpBtn{
+    margin: 20px auto;
+    width: 100px;
+}
