@@ -45,7 +45,7 @@ function on_write_topic_submit(){
         </table>
         <div class='writeTopicBtn'>
             <input class='anchor_button' type='submit' value='확인' />
-            <a class='anchor_button' href='/'>취소</a>
+            <a class='anchor_button' href='<?="/topic/page?table={$tablePrefix}&page=1&id={$topicInfo->id}"?>'>취소</a>
         </div>
     </form>
 </div>

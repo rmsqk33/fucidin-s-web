@@ -63,7 +63,7 @@ class User extends MY_Controller{
             if($result !== false){
                 $_SESSION['userId'] = $result;
 
-                $view = $this->load->view("common/success_page", array( 'message' => "가입 완료되었습니다."), true);
+                $successView = $this->load->view("common/success_page", array( 'message' => "가입 완료되었습니다."), true);
                 $this->load_common_view($successView);
             } else{
                 error_show_log("fail edit info: db error");
@@ -104,31 +104,34 @@ class User extends MY_Controller{
 
         $nickNameMaxLength = $this->User_Model->get_nickname_max_length();
         $this->form_validation->set_rules("nickname", "닉네임", "is_unique[userinfo.nickname]|min_length[1]|max_length[$nickNameMaxLength]");
-
-        $profilMaxLen = $this->User_Model->get_profil_max_length();
-        $this->form_validation->set_rules("profil", "프로필", "max_length[$profilMaxLen]");
         $this->form_validation->set_rules("icondata", "아이콘", "callback_upload_icon_check");
 
         $this->load->model("IniDataReader");
         $iconAllowTypes = $this->IniDataReader->get_user_info_edit_data("iconAllowTypes");
 
         if($this->form_validation->run()){
-            $updateDatas = array(
-                 'nickname' => $this->input->post('nickname'),
-                'profil' => $this->input->post('profil'),
-                'iconpath' => $this->uploadUserIconPath,
-            );
+            $updateDatas = array();
 
-            if($this->User_Model->update_user_info($_SESSION['userId'], $updateDatas)){
+            $nickName = $this->input->post('nickname');
+            if(!empty($nickName)){
+                $updateDatas['nickname'] = $nickName;
+            }
+
+            if(!empty($this->uploadUserIconPath)){
+                $updateDatas['iconpath'] = $this->uploadUserIconPath;
+            }
+
+            if(empty($updateDatas) || $this->User_Model->update_user_info($_SESSION['userId'], $updateDatas)){
                 $view = $this->load->view("common/success_page", array( 'message' => "수정 완료되었습니다."), true);
                 $this->load_common_view($view);
+            } else{
+                error_show_log("fail edit info: db error");
             }
         } else{
             $editInfoView = $this->load->view("user/edit_info", array(
                 'userInfo' => $userInfo,
                 'iconAllowTypes' => $iconAllowTypes,
                 'nickNameMaxLength' => $nickNameMaxLength,
-                'profilMaxLength' => $profilMaxLen,
                 'iconMaxSize' => $this->IniDataReader->get_user_info_edit_data("maxSize"),
             ), true);
 

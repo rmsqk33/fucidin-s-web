@@ -75,24 +75,8 @@ class User_Model extends CI_Model{
     }
 
     public function update_user_info($id, $updateDatas){
-        $data = array();
-        if(!empty($updateDatas['iconpath'])){
-            $data['iconpath'] = $updateDatas['iconpath'];
-        }
-
-        if(!empty($updateDatas['nickname'])){
-            $data['nickname'] = $updateDatas['nickname'];
-        }
-
-        if(isset($updateDatas['profil'])){
-            $data['profil'] = $updateDatas['profil'];
-        }
-
-        if(empty($data))
-            return false;
-
         $this->db->where("id", $id);
-        return $this->db->update("userinfo", $data);
+        return $this->db->update("userinfo", $updateDatas);
     }
 
     private function get_user_info_inner($id, $columns){

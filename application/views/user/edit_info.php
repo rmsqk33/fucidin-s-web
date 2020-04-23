@@ -14,7 +14,7 @@ if(1024 <= $iconMaxSize){
                     <td class='rightSide'>
                         <div><?=$userInfo->nickname?></div>
                         <input type='text' name='nickname' <?=$nickNameMaxLength?>/>
-                        <span class='errorMsg'><?=form_error("nickname")?></span>
+                        <div class='errorMsg'><?=form_error("nickname")?></div>
                     </td>
                 </tr>
                 <tr>
@@ -31,13 +31,6 @@ if(1024 <= $iconMaxSize){
                         </div>
                         <div class='text_font_11'>사용 가능한 이미지(<?=$iconAllowTypes?>)</div>
                         <div class='errorMsg'><?=form_error("icondata")?></div>
-                    </td>
-                </tr>
-                <tr class='profil'>
-                    <td class='leftSide'>프로필(최대 <?=$profilMaxLength?>자)</td>
-                    <td class='rightSide'>
-                        <textarea name='profil' cols='20' rows='10' maxlength='<?=$profilMaxLength?>'><?=$userInfo->profil?></textarea>
-                        <span class='errorMsg'><?=form_error("profil")?></span>
                     </td>
                 </tr>
             </tbody>
